@@ -1,0 +1,216 @@
+/* src/components/layout/Footer.module.css */
+
+.footer {
+  background-color: var(--color-bg-inverse);
+  color: var(--color-text-inverse);
+}
+
+/* CTA band */
+.ctaWrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.75rem;
+  padding-block: clamp(3rem, 6vw, 4.5rem);
+  border-bottom: 1px solid rgba(251, 248, 245, 0.12);
+}
+
+.ctaEyebrow {
+  display: block;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--color-accent-light);
+  margin-bottom: 0.75rem;
+}
+
+.ctaHeading {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: 500;
+  color: var(--color-text-inverse);
+  max-width: 26rem;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-shrink: 0;
+  padding: 1rem 2.25rem;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--color-bg-inverse);
+  background-color: var(--color-accent-light);
+  border-radius: var(--radius-full);
+  transition: var(--transition-btn);
+}
+
+.ctaButton:hover {
+  background-color: var(--color-accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Columns */
+.columns {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.4fr;
+  gap: 2.5rem;
+  padding-block: clamp(3rem, 6vw, 4.5rem);
+}
+
+.column {
+  min-width: 0;
+}
+
+.brand {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  color: var(--color-text-inverse);
+  margin-bottom: 1rem;
+}
+
+.brandText {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-relaxed);
+  color: rgba(251, 248, 245, 0.72);
+  max-width: 24rem;
+  margin-bottom: 1.5rem;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--color-accent-light);
+  transition: color var(--duration-base) var(--ease-standard);
+}
+
+.socialLink:hover {
+  color: var(--color-accent);
+}
+
+.columnTitle {
+  font-family: var(--font-body);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: rgba(251, 248, 245, 0.55);
+  margin-bottom: 1.5rem;
+}
+
+.linkList,
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.footerLink {
+  font-size: var(--fs-sm);
+  color: rgba(251, 248, 245, 0.82);
+  transition: color var(--duration-base) var(--ease-standard);
+}
+
+.footerLink:hover {
+  color: var(--color-accent-light);
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-normal);
+  color: rgba(251, 248, 245, 0.82);
+  transition: color var(--duration-base) var(--ease-standard);
+}
+
+.contactItem svg {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  color: var(--color-accent-light);
+}
+
+a.contactItem:hover {
+  color: var(--color-accent-light);
+}
+
+/* Bottom bar */
+.bottomBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.75rem;
+  border-top: 1px solid rgba(251, 248, 245, 0.12);
+}
+
+.copyright {
+  font-size: var(--fs-xs);
+  color: rgba(251, 248, 245, 0.55);
+}
+
+.backToTop {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: rgba(251, 248, 245, 0.55);
+  transition: color var(--duration-base) var(--ease-standard);
+}
+
+.backToTop:hover {
+  color: var(--color-accent-light);
+}
+
+/* -------------------------------------------------------------------------
+   Responsive
+   ------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .columns {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaWrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ctaButton {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .columns {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .bottomBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
