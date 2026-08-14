@@ -57,10 +57,7 @@ export default function GalleryPreview() {
             <span className="text-eyebrow">Our Work</span>
             <h2 className={styles.heading}>A glimpse inside the salon.</h2>
           </div>
-          <Link href="/gallery" className={styles.link}>
-            View Full Gallery
-            <ArrowRight size={16} aria-hidden="true" />
-          </Link>
+         
         </div>
 
         <div ref={gridRef} className={styles.grid}>

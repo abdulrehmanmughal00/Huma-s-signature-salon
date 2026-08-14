@@ -68,10 +68,7 @@ export default function AboutPreview() {
             <MapPin size={18} aria-hidden="true" />
             Garden East, Karachi, Pakistan
           </p>
-          <Link href="/about" className={styles.link}>
-            Discover Our Story
-            <ArrowRight size={16} aria-hidden="true" />
-          </Link>
+         
         </div>
 
         <div ref={imageRef} className={styles.imageCol}>
