@@ -244,7 +244,7 @@ export default function Navbar() {
           className={styles.logo}
           aria-label="Huma's Signature Salon - Home"
         >
-          Huma&apos;s Signature Salon
+          Your Beauty Studio
         </a>
 
         {/* Desktop Navigation */}

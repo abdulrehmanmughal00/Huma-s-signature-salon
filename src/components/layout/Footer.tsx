@@ -33,7 +33,7 @@ const DISPLAY_PHONE_NUMBER = WHATSAPP_NUMBER
 
 const PHONE_LINK = WHATSAPP_NUMBER ? `tel:+${WHATSAPP_NUMBER}` : "#";
 
-const FACEBOOK_URL = "https://www.facebook.com/HumasSignatureSaloon/";
+const FACEBOOK_URL = "https://www.facebook.com/";
 
 const INSTAGRAM_URL = "https://www.instagram.com/";
 
@@ -236,8 +236,7 @@ export default function Footer() {
               <MapPin size={16} aria-hidden="true" />
 
               <span>
-                G-2 Ground Floor, 330 Sara Apartment, Garden East, Britto Road,
-                Garden East, Karachi, Pakistan
+              Pakistan , Karachi
               </span>
             </li>
 
